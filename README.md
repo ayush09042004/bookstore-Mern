@@ -1,39 +1,117 @@
-# build-full-stack-book-store-mern-app
-![full-stack-book-store-mern-project](/frontend/src/assets/github-cover.png)
+Welcome to the Book Store MERN Application — a full-stack project that demonstrates a complete MERN (MongoDB, Express, React, Node.js) stack implementation with secure user authentication, product management, and a dynamic front-end interface.
 
-## How to run this project:
+🚀 Project Setup Instructions
+🔧 Frontend Setup
+Clone or Download the Project Repository:
 
-### For Frontend 
-Follow the below steps to run the project: 
-- Firstly clone or unzip the project folder.
-* Go to the frontend directory by using the following command ``` cd frontend ```.
-* * create a **.env.local** file in the backend root directory as the same level where the **package.json** is located and keep the following environment variables there:
-```
->>> Stepup firebase app and configure the environment
+bash
+Copy
+Edit
+git clone https://github.com/your-username/book-store-mern-app.git
+cd book-store-mern-app
+Navigate to the Frontend Directory:
 
-VITE_API_KEY="AIzaSyCXvDIC4MPrkaMdeg_O2iij88wLpfj3qBA"
-VITE_Auth_Domain="book-store-mern-app.firebaseapp.com"
-VITE_PROJECT_ID="book-store-mern-app"
-VITE_STORAGE_BUCKET="book-store-mern-app.appspot.com"
-VITE_MESSAGING_SENDERID= "205632822247"
-VITE_APPID="1:205632822247:web:b0db0ec66bf6de0bbb3b42"
-```
-+ Then run `` npm install `` commend to install node dependencies.
-- Finally, to run the project, use ``npm run dev`` command.
+bash
+Copy
+Edit
+cd frontend
+Create a .env.local File:
 
+Inside the frontend directory (same level as package.json), create a .env.local file.
 
-### For Backend
-Follow the below steps to run the project: 
-- Firstly clone or unzip the project folder.
-* Go to the backend directory by using the following command ``` cd backend```.
-+ Then run `` npm install `` commend to install node dependencies.
-* create a **.env** file in the backend root directory as the same level where the **package.json** is located and keep the following environment variables there: 
-```
-DB_URL = "mongodb+srv://helpyourassistant:pqam0Mwv3Vwv8Off@cluster0.qc3bq.mongodb.net/book-store?retryWrites=true&w=majority&appName=Cluster0"
+Add the following Firebase configuration (replace with your own Firebase credentials):
 
-JWT_SECRET_KEY = 'bc992a20cb6706f741433686be814e3df45e57ea1c2fc85f9dbb0ef7df12308a669bfa7c976368ff32e32f6541480ce9ec1b122242f9b1257ab669026aeaf16'
+env
+Copy
+Edit
+VITE_API_KEY="Your_Firebase_API_Key"
+VITE_AUTH_DOMAIN="Your_Firebase_Auth_Domain"
+VITE_PROJECT_ID="Your_Firebase_Project_ID"
+VITE_STORAGE_BUCKET="Your_Firebase_Storage_Bucket"
+VITE_MESSAGING_SENDERID="Your_Firebase_Messaging_SenderID"
+VITE_APPID="Your_Firebase_AppID"
+Install Dependencies:
 
-Note: Please setup mongodb and change the MongoDB url and set your jwt secret key above.
-```
+bash
+Copy
+Edit
+npm install
+Start the Frontend Development Server:
 
-- Finally, to run the project, use ``npm run start:dev`` command.
+bash
+Copy
+Edit
+npm run dev
+🌐 Backend Setup
+Navigate to the Backend Directory:
+
+bash
+Copy
+Edit
+cd backend
+Create a .env File:
+
+In the backend directory (same level as package.json), create a .env file.
+
+Add the following environment variables:
+
+env
+Copy
+Edit
+DB_URL="Your_MongoDB_Connection_String"
+JWT_SECRET_KEY="Your_Secure_JWT_Secret_Key"
+Replace MongoDB URL:
+
+Make sure to use your own MongoDB connection string.
+
+Example:
+
+env
+Copy
+Edit
+DB_URL="mongodb+srv://<your-username>:<your-password>@cluster0.mongodb.net/book-store?retryWrites=true&w=majority"
+Secure Your JWT Secret Key:
+
+Generate a strong secret key for JWT.
+
+Example:
+
+env
+Copy
+Edit
+JWT_SECRET_KEY="L@pr}RmE{\"xN5xB"
+Install Backend Dependencies:
+
+bash
+Copy
+Edit
+npm install
+Start the Backend Development Server:
+
+bash
+Copy
+Edit
+npm run start:dev
+📌 Features
+🔒 Secure User Authentication (JWT-based).
+
+📚 Dynamic Book Management (Add, Update, Delete).
+
+🔍 Real-time Search Functionality.
+
+🛒 Shopping Cart Integration.
+
+📦 Order Management.
+
+🚀 Technology Stack
+Frontend: React, Vite, Firebase for authentication and data storage.
+
+Backend: Node.js, Express.js, MongoDB (Atlas) for database.
+
+Authentication: JWT (JSON Web Token) for secure access.
+
+✅ Tips
+Make sure your .env and .env.local files are listed in .gitignore to keep them secure.
+
+Customize the Firebase and MongoDB credentials for your own project.
+
